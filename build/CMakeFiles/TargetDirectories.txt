@@ -1,3 +1,4 @@
 D:/dsvm_chat/build/CMakeFiles/chat_server.dir
 D:/dsvm_chat/build/CMakeFiles/ALL_BUILD.dir
 D:/dsvm_chat/build/CMakeFiles/ZERO_CHECK.dir
+D:/dsvm_chat/build/mysql/CMakeFiles/mysql_lib.dir

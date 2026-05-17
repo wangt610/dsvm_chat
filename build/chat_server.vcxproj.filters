@@ -4,9 +4,6 @@
     <ClCompile Include="D:\dsvm_chat\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\dsvm_chat\MySQLManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\dsvm_chat\CMakeLists.txt" />
