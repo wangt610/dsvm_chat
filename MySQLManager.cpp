@@ -16,7 +16,7 @@ bool MySQLManager::init() {
 
     // 你自己改MySQL地址/账号/密码/库名
     return mysql_real_connect(conn,
-        "localhost", "root", "123456", "chatdb", 3306, nullptr, 0);
+        "localhost", "root", "123456", "chatsystem", 3306, nullptr, 0);
 }
 
 bool MySQLManager::query(const char* sql) {

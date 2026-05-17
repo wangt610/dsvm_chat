@@ -1,7 +1,7 @@
 #ifndef MYSQL_MANAGER_H
 #define MYSQL_MANAGER_H
 
-#include <mysql/mysql.h>
+#include <mysql.h>
 #include <string>
 
 class MySQLManager {
