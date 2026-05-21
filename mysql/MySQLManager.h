@@ -17,12 +17,11 @@ public:
     // 登录：查询账号密码是否匹配
     bool LoginCheck(const std::string& name, const std::string& pwd);
 
-    
     MYSQL* getConn();
+    ~MySQLManager();
 
 private:
     MySQLManager();
-    ~MySQLManager();
     struct impl;
     std::unique_ptr<impl> pImpl;
 };
