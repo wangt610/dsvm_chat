@@ -1,8 +1,14 @@
 #include "MySQLManager.h"
+ struct MySQLManager::impl{
+    MYSQL* conn;
 
-MySQLManager::MySQLManager() : conn(nullptr) {}
+}
+
+MySQLManager::MySQLManager() : pImpl(std::make_unique<impl>()) {
+    pImpl->conn = nullptr;
+}
 MySQLManager::~MySQLManager() {
-    if (conn) mysql_close(conn);
+    if (pImpl->conn) mysql_close(pImpl->conn);
 }
 
 MySQLManager& MySQLManager::getInstance() {

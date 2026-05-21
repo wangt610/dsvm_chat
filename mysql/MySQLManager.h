@@ -4,6 +4,7 @@
 #include <mysql.h>
 #include <string>
 #include <memory>
+#include <cstdio>
 class MySQLManager {
 public:
     static MySQLManager& getInstance();
