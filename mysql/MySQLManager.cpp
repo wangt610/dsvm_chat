@@ -2,13 +2,13 @@
  struct MySQLManager::impl{
     MYSQL* conn =nullptr;
     MySQLManager* vm_handle_ {nullptr};
-
-}
+};
 
 MySQLManager::MySQLManager() 
     : pImpl(std::make_unique<impl>()) 
 {
     pImpl->conn = nullptr;
+    pImpl->vm_handle_ = this;
 }
 
 MySQLManager::~MySQLManager() {
