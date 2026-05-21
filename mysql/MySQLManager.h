@@ -3,7 +3,7 @@
 
 #include <mysql.h>
 #include <string>
-
+#include <memory>
 class MySQLManager {
 public:
     static MySQLManager& getInstance();
@@ -22,7 +22,8 @@ public:
 private:
     MySQLManager();
     ~MySQLManager();
-    MYSQL* conn;
+    struct impl;
+    std::unique_ptr<impl> pImpl;
 };
 
 #endif
